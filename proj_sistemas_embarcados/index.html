@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/omerimzali/uiterminal@master/uiterminal.min.css" >
+   </head>
+
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+
+</head><body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <h2>Entrada </h2><hr>
+                <h2> Teclado </h2>
+                Letra: AABBCC<br>
+                ASCII: 41 41 42 42 43 43<br>
+            </div>
+
+            <div class="col">
+                <h2> Processador </h2><hr><div class="row">
+                <div class="col-6">
+                    <h2> Registradores </h2>
+                    EAX : 00 00 00 00 <br>
+                    EBX : 00 00 00 00 <br>
+                    ECX : 00 00 00 00 <br>
+                    EDX : 00 00 00 00 <br>
+                </div>
+
+                <div class="col-6">
+                    <h2> ULA </h2>
+                    Op1 : 00 00 00 00 <br>
+                    Op2 : 00 00 00 00 <br>
+                    Res : 00 00 00 00 <br>
+                    Flags: OVERFLOW <br>
+                </div>
+
+                <div class="col">
+                    <h2> Memoria </h2>
+                    0000 | <u>00 00 00 00</u> 00 00 00 00  00 00 00 00 00 00 00 00 | ...... | <br>
+                    0010 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0020 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0030 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0040 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0050 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0060 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                    0070 | 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | ...... | <br>
+                </div>
+            </div></div>
+
+            <div class="col-4">
+                <h2> Saída </h2><hr>
+                <h2> Console </h2>
+                <div class='uiterminal-full'>
+                    Opa Opa
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row"><hr>
+            <div class="col-2"><h2>Código</h2></div>
+            <div class="col-6"><pre>
+leia byte do teclado para al
+enquanto al != 0 faca
+    se al == 'c' entao
+        mova 'C' para al
+    fim
+    escreva byte do al para console
+    leia byte do teclado para al
+fim
+            </pre></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body></html>
